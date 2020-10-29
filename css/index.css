@@ -125,6 +125,26 @@ button.bg-magenta:focus {
   fill: #652121;
 }
 
+.custom-shape-divider-bottom-1603931150 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-bottom-1603931150 svg {
+  position: relative;
+  display: block;
+  width: calc(300% + 1.3px);
+  height: 86px;
+}
+
+.custom-shape-divider-bottom-1603931150 .shape-fill {
+  fill: #F8F9FA;
+}
+
 .zoom {
   transition: transform .2s; /* Animation */
 }
