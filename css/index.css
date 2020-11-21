@@ -156,3 +156,23 @@ button.bg-magenta:focus {
 .people img {
   max-width: 25rem;
 }
+
+.fa-youtube {
+  background-image: radial-gradient(at center, rgb(255, 255, 255) 40%, transparent 40%);
+}
+
+.portfolio-item .portfolio-link .youtube-player {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;  
+  align-items: center;
+  justify-content: center;  
+}
+.portfolio-item .portfolio-link .youtube-player:hover {
+  opacity: 0;
+  transition: opacity .5s ease-out;
+  -moz-transition: opacity .5s ease-out;
+  -webkit-transition: opacity .5s ease-out;
+  -o-transition: opacity .5s ease-out;
+}
