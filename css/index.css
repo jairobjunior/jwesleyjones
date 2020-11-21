@@ -153,10 +153,6 @@ button.bg-magenta:focus {
   transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
-.people img {
-  max-width: 25rem;
-}
-
 .fa-youtube {
   background-image: radial-gradient(at center, rgb(255, 255, 255) 40%, transparent 40%);
 }
