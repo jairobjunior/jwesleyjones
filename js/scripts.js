@@ -3,14 +3,26 @@
     * Copyright 2013-2020 Start Bootstrap
     * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-agency/blob/master/LICENSE)
     */
-   (function ($) {
+(function ($) {
     "use strict"; // Start of use strict
+
+    $(".video-modal").click(function () {
+        var theModal = $(this).data("target"),
+            videoSRC = $(this).attr("data-video"),
+            videoSRCauto = videoSRC + "?modestbranding=1&rel=0&controls=1&showinfo=0&html5=1&autoplay=1",
+            allowParams = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
+        $(theModal + ' iframe').attr('src', videoSRCauto);
+        $(theModal + ' iframe').attr('allow', allowParams);
+        $(theModal).on('hidden.bs.modal', function () {
+            $(theModal + ' iframe').attr('src', videoSRC);
+        });
+    });
 
     // Smooth scrolling using jQuery easing
     $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
         if (
             location.pathname.replace(/^\//, "") ==
-                this.pathname.replace(/^\//, "") &&
+            this.pathname.replace(/^\//, "") &&
             location.hostname == this.hostname
         ) {
             var target = $(this.hash);

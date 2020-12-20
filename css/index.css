@@ -8,8 +8,8 @@
 }
 
 .col-center {
-margin: 0 auto;
-float: none !important;
+  margin: 0 auto;
+  float: none !important;
 }
 
 .iframe-container {
@@ -18,7 +18,8 @@ float: none !important;
   padding-bottom: 56.25%;
   height: 0;
 }
-.iframe-container iframe{
+
+.iframe-container iframe {
   position: absolute;
   top: 0;
   left: 0;
@@ -27,47 +28,55 @@ float: none !important;
 }
 
 .carousel {
-margin: 50px auto;
-padding: 0 70px;
+  margin: 50px auto;
+  padding: 0 70px;
 }
+
 .carousel-item {
-color: #999;
-font-size: 14px;
+  color: #999;
+  font-size: 14px;
   text-align: center;
-overflow: hidden;
+  overflow: hidden;
   min-height: 290px;
 }
+
 .carousel .item .img-box {
-width: 135px;
-height: 135px;
-margin: 0 auto;
-padding: 5px;
-border: 1px solid #ddd;
-border-radius: 50%;
+  width: 135px;
+  height: 135px;
+  margin: 0 auto;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 50%;
 }
+
 .carousel .img-box img {
-width: 100%;
-height: 100%;
-display: block;
-border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 50%;
 }
+
 .carousel .testimonial {
-padding: 30px 0 10px;
+  padding: 30px 0 10px;
 }
-.carousel .overview {	
-font-style: italic;
+
+.carousel .overview {
+  font-style: italic;
 }
+
 .carousel .overview b {
-text-transform: uppercase;
-color: black;
+  text-transform: uppercase;
+  color: black;
 }
+
 .carousel .carousel-control {
-width: 40px;
+  width: 40px;
   height: 40px;
   margin-top: -20px;
   top: 50%;
-background: none;
+  background: none;
 }
+
 .carousel-control i {
   font-size: 68px;
   line-height: 42px;
@@ -76,53 +85,35 @@ background: none;
   color: rgba(0, 0, 0, 0.8);
   text-shadow: 0 3px 3px #e6e6e6, 0 0 0 #000;
 }
+
 .carousel .carousel-indicators {
-bottom: -40px;
+  bottom: -40px;
 }
+
 .carousel-indicators li, .carousel-indicators li.active {
-width: 10px;
-height: 10px;
-margin: 1px 3px;
-border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  margin: 1px 3px;
+  border-radius: 50%;
 }
-.carousel-indicators li {	
-background: #999;
-border-color: transparent;
-box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
+
+.carousel-indicators li {
+  background: #999;
+  border-color: transparent;
+  box-shadow: inset 0 2px 1px rgba(0, 0, 0, 0.2);
 }
-.carousel-indicators li.active {	
-background: #555;		
-box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
+
+.carousel-indicators li.active {
+  background: #555;
+  box-shadow: inset 0 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .bg-magenta {
   background-color: #652121 !important;
 }
 
-a.bg-magenta:hover, a.bg-magenta:focus,
-button.bg-magenta:hover,
-button.bg-magenta:focus {
+a.bg-magenta:hover, a.bg-magenta:focus, button.bg-magenta:hover, button.bg-magenta:focus {
   background-color: #dae0e5 !important;
-}
-
-.custom-shape-divider-bottom-1603930706 {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-}
-
-.custom-shape-divider-bottom-1603930706 svg {
-  position: relative;
-  display: block;
-  width: calc(206% + 1.3px);
-  height: 157px;
-}
-
-.custom-shape-divider-bottom-1603930706 .shape-fill {
-  fill: #652121;
 }
 
 .custom-shape-divider-bottom-1603931150 {
@@ -137,20 +128,28 @@ button.bg-magenta:focus {
 .custom-shape-divider-bottom-1603931150 svg {
   position: relative;
   display: block;
-  width: calc(300% + 1.3px);
-  height: 86px;
+  width: calc(200% + 1.3px);
+  height: 50px;
 }
 
 .custom-shape-divider-bottom-1603931150 .shape-fill {
   fill: #F8F9FA;
 }
 
+@media (min-width: 768px) {
+  .custom-shape-divider-bottom-1603931150 svg {
+    height: 100px;
+  }
+}
+
 .zoom {
-  transition: transform .2s; /* Animation */
+  transition: transform .2s;
+  /* Animation */
 }
 
 .zoom:hover {
-  transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  transform: scale(1.05);
+  /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
 .fa-youtube {
@@ -161,14 +160,31 @@ button.bg-magenta:focus {
   display: flex;
   position: absolute;
   width: 100%;
-  height: 100%;  
+  height: 100%;
   align-items: center;
-  justify-content: center;  
+  justify-content: center;
 }
+
 .portfolio-item .portfolio-link .youtube-player:hover {
   opacity: 0;
   transition: opacity .5s ease-out;
   -moz-transition: opacity .5s ease-out;
   -webkit-transition: opacity .5s ease-out;
   -o-transition: opacity .5s ease-out;
+}
+
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.embed-container iframe, .embed-container object, .embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }

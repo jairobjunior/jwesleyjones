@@ -47,10 +47,13 @@
     <!-- Masthead-->
     <header class="masthead" style="position: relative;">
         <div class="container">
-            <div class="masthead-subheading">Director | Cameraman</div>
-            <div class="masthead-subheading mt-5 mb-5" style="font-size: 85px; font-weight: bold;">The King of Splash
-            </div>
-            <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger mt-3 zoom" href="#portfolio">Portfolio</a>
+            <div class="masthead-subheading" style="text-shadow: rgb(21, 21, 21) 0.1em 0.1em 0.1em;">Director |
+                Cameraman</div>
+            <div class="masthead-heading" style="font-weight: bold; text-shadow: rgb(21, 21, 21) 0.1em 0.1em 0.1em;">The
+                King of
+                Splash</div>
+            <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger mt-3 zoom" href="#portfolio">View
+                Portfolio</a>
         </div>
         <div class="custom-shape-divider-bottom-1603931150">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
@@ -61,18 +64,18 @@
             </svg>
         </div>
     </header>
-
+    
     <!--Liquid Grid-->
     <section class="page-section bg-light" id="portfolio" style="position: relative;">
         <div class="container mb-5">
             <div class="text-center mb-5">
-                <h2 class="section-heading">.liquid</h2>
+                <h2 class="display-3"><span style="color: coral;">.</span>liquid</h2>
                 <!-- <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3> -->
             </div>
             <div class="row">
                 <div class="col-lg-4 col-sm-6 mb-5">
                     <div class="portfolio-item shadow-sm">
-                        <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+                        <a class="portfolio-link video-modal" data-video="https://www.youtube.com/embed/ZPdYeZig5Kw" data-toggle="modal" data-target="#videoModal">
                             <div class="portfolio-hover">
                                 <div class="portfolio-hover-content">
                                     <span style="color: rgba(255, 0, 0);">
@@ -95,7 +98,7 @@
                 </div>
                 <div class="col-lg-4 col-sm-6 mb-4">
                     <div class="portfolio-item shadow-sm">
-                        <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+                        <a class="portfolio-link video-modal" data-video="https://www.youtube.com/embed/t0zrBNYv4Gg" data-toggle="modal" data-target="#videoModal">
                             <div class="portfolio-hover">
                                 <div class="portfolio-hover-content">
                                     <span style="color: rgba(255, 0, 0);">
@@ -111,14 +114,14 @@
                             <img class="img-fluid" src="assets/img/liquid/chardnnay.jpg" alt="" />
                         </a>
                         <div class="portfolio-caption">
-                            <div class="portfolio-caption-heading">Chardonnay</div>
-                            <div class="portfolio-caption-subheading text-muted">1999</div>
+                            <div class="portfolio-caption-heading">E & J Gallo Winery</div>
+                            <div class="portfolio-caption-subheading text-muted">2001</div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-sm-6 mb-4">
                     <div class="portfolio-item shadow-sm">
-                        <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+                        <a class="portfolio-link video-modal" data-video="https://www.youtube.com/embed/a6lvvrUjZkk" data-toggle="modal" data-target="#videoModal">
                             <div class="portfolio-hover">
                                 <div class="portfolio-hover-content">
                                     <span style="color: rgba(255, 0, 0);">
@@ -142,8 +145,8 @@
             </div>
             <div class="row">
                 <div class="col-lg-4 col-sm-6 mb-4">
-                    <div class="portfolio-item shadow-sm">
-                        <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+                    <div class="portfolio-item shadow-sm">                        
+                        <a class="portfolio-link video-modal" data-video="https://www.youtube.com/embed/4WJ3yh4Py14" data-toggle="modal" data-target="#videoModal">
                             <div class="portfolio-hover">
                                 <div class="portfolio-hover-content">
                                     <span style="color: rgba(255, 0, 0);">
@@ -166,7 +169,7 @@
                 </div>
                 <div class="col-lg-4 col-sm-6 mb-4">
                     <div class="portfolio-item shadow-sm">
-                        <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+                        <a class="portfolio-link video-modal" data-video="https://www.youtube.com/embed/i3z08ALDj9s" data-toggle="modal" data-target="#videoModal">
                             <div class="portfolio-hover">
                                 <div class="portfolio-hover-content">
                                     <span style="color: rgba(255, 0, 0);">
@@ -189,7 +192,7 @@
                 </div>
                 <div class="col-lg-4 col-sm-6 mb-4">
                     <div class="portfolio-item shadow-sm">
-                        <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+                        <a class="portfolio-link video-modal" data-video="https://www.youtube.com/embed/VhH2sofTlLE" data-toggle="modal" data-target="#videoModal">
                             <div class="portfolio-hover">
                                 <div class="portfolio-hover-content">
                                     <span style="color: rgba(255, 0, 0);">
@@ -212,25 +215,14 @@
                 </div>
             </div>
         </div>
-        <br>
-        <br>
-        <br>
-        <div class="custom-shape-divider-bottom-1603930706">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
-                preserveAspectRatio="none">
-                <path
-                    d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
-                    class="shape-fill"></path>
-            </svg>
-        </div>
     </section>
     <!--People-->
-    <section class="page-section bg-magenta" id="people">
+    <section class="page-section" id="people">
         <div class="container">
             <div class="row row-cols-1 row-cols-lg-2">
-                <div class="col order-2 order-lg-1">                    
+                <div class="col order-2 order-lg-1">
                     <div class="portfolio-item shadow-sm">
-                        <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+                        <a class="portfolio-link video-modal" data-video="https://www.youtube.com/embed/EGHR6pBdlE0" data-toggle="modal" data-target="#videoModal">
                             <div class="portfolio-hover">
                                 <div class="portfolio-hover-content">
                                     <span style="color: rgba(255, 0, 0);">
@@ -243,20 +235,21 @@
                                     <i class="fab fa-youtube fa-4x" aria-hidden="true"></i>
                                 </span>
                             </div>
-                            <img class="img-fluid rounded img-thumbnail" src="assets/img/people.jpg" alt="" />
-                        </a>                        
+                            <img class="img-fluid rounded" src="assets/img/people.jpg" alt="" />
+                        </a>
                     </div>
-                </div>                
+                </div>
                 <div class="col order-1 order-lg-2 align-self-center">
                     <div class="text-left">
-                        <h2 class="section-heading" style="color: snow;">.people</h2>
-                        <h3 class="section-subheading" style="color: snow;">Lorem ipsum dolor sit, amet consectetur
+                        <h2 class="display-3"><span style="color: red;">.</span>people</h2>
+                        <p class="lead">Lorem ipsum dolor sit, amet consectetur
                             adipisicing elit. Corrupti rerum
                             dolores, cum explicabo, voluptatibus aut asperiores magnam autem illum, hic quasi esse. Quia
                             consequatur repellat
                             eum aliquid tenetur. Veritatis eveniet consectetur nisi, tenetur quae aliquam odit optio
                             ipsa mollitia nam facilis
-                            quo omnis rerum eaque, magni voluptatum eligendi, dicta eum?</h3>
+                            quo omnis rerum eaque, magni voluptatum eligendi, dicta eum?
+                        </p>
                     </div>
                 </div>
             </div>
@@ -266,13 +259,13 @@
     <section class="page-section bg-light" id="food">
         <div class="container">
             <div class="text-center mb-5">
-                <h2 class="section-heading">.food</h2>
+                <h2 class="display-3"><span style="color: yellowgreen;">.</span>food</h2>
                 <!-- <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3> -->
             </div>
             <div class="row">
                 <div class="col-lg-4 col-sm-6 mb-4">
                     <div class="portfolio-item shadow-sm">
-                        <a class="portfolio-link" data-toggle="modal" href="#foodModal1">
+                        <a class="portfolio-link video-modal" data-video="https://www.youtube.com/embed/cGyDWluw1HI" data-toggle="modal" data-target="#videoModal">
                             <div class="portfolio-hover">
                                 <div class="portfolio-hover-content">
                                     <span style="color: rgba(255, 0, 0);">
@@ -288,14 +281,14 @@
                             <img class="img-fluid" src="assets/img/food/thai-beef.jpg" alt="" />
                         </a>
                         <div class="portfolio-caption">
-                            <div class="portfolio-caption-heading">Threads</div>
-                            <div class="portfolio-caption-subheading text-muted">Illustration</div>
+                            <div class="portfolio-caption-heading">Thai Beef</div>
+                            <div class="portfolio-caption-subheading text-muted">2003</div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-sm-6 mb-4">
                     <div class="portfolio-item shadow-sm">
-                        <a class="portfolio-link" data-toggle="modal" href="#foodModal2">
+                        <a class="portfolio-link video-modal" data-video="https://www.youtube.com/embed/qqoqZ6iQ3NI" data-toggle="modal" data-target="#videoModal">
                             <div class="portfolio-hover">
                                 <div class="portfolio-hover-content">
                                     <span style="color: rgba(255, 0, 0);">
@@ -311,14 +304,14 @@
                             <img class="img-fluid" src="assets/img/food/claussen.jpg" alt="" />
                         </a>
                         <div class="portfolio-caption">
-                            <div class="portfolio-caption-heading">Explore</div>
-                            <div class="portfolio-caption-subheading text-muted">Graphic Design</div>
+                            <div class="portfolio-caption-heading">Claussen Pickle</div>
+                            <div class="portfolio-caption-subheading text-muted">1999</div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-sm-6 mb-4">
                     <div class="portfolio-item shadow-sm">
-                        <a class="portfolio-link" data-toggle="modal" href="#foodModal3">
+                        <a class="portfolio-link video-modal" data-video="https://www.youtube.com/embed/P1tQX95L80s" data-toggle="modal" data-target="#videoModal">
                             <div class="portfolio-hover">
                                 <div class="portfolio-hover-content">
                                     <span style="color: rgba(255, 0, 0);">
@@ -334,8 +327,8 @@
                             <img class="img-fluid" src="assets/img/food/sauce-lawrys.jpg" alt="" />
                         </a>
                         <div class="portfolio-caption">
-                            <div class="portfolio-caption-heading">Finish</div>
-                            <div class="portfolio-caption-subheading text-muted">Identity</div>
+                            <div class="portfolio-caption-heading">Lawrys Marinade</div>
+                            <div class="portfolio-caption-subheading text-muted">2002</div>
                         </div>
                     </div>
                 </div>
@@ -343,7 +336,7 @@
             <div class="row">
                 <div class="col-lg-4 col-sm-6 mb-4">
                     <div class="portfolio-item shadow-sm">
-                        <a class="portfolio-link" data-toggle="modal" href="#foodModal1">
+                        <a class="portfolio-link video-modal" data-video="https://www.youtube.com/embed/7pdpo6xmGZ8" data-toggle="modal" data-target="#videoModal">
                             <div class="portfolio-hover">
                                 <div class="portfolio-hover-content">
                                     <span style="color: rgba(255, 0, 0);">
@@ -359,14 +352,14 @@
                             <img class="img-fluid" src="assets/img/food/berries.jpg" alt="" />
                         </a>
                         <div class="portfolio-caption">
-                            <div class="portfolio-caption-heading">Threads</div>
-                            <div class="portfolio-caption-subheading text-muted">Illustration</div>
+                            <div class="portfolio-caption-heading">Berries</div>
+                            <div class="portfolio-caption-subheading text-muted">2004</div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-sm-6 mb-4">
                     <div class="portfolio-item shadow-sm">
-                        <a class="portfolio-link" data-toggle="modal" href="#foodModal2">
+                        <a class="portfolio-link video-modal" data-video="https://www.youtube.com/embed/2u3xlKc7BeM" data-toggle="modal" data-target="#videoModal">
                             <div class="portfolio-hover">
                                 <div class="portfolio-hover-content">
                                     <span style="color: rgba(255, 0, 0);">
@@ -382,14 +375,14 @@
                             <img class="img-fluid" src="assets/img/food/popcorn.jpg" alt="" />
                         </a>
                         <div class="portfolio-caption">
-                            <div class="portfolio-caption-heading">Explore</div>
-                            <div class="portfolio-caption-subheading text-muted">Graphic Design</div>
+                            <div class="portfolio-caption-heading">Crispy Glazed</div>
+                            <div class="portfolio-caption-subheading text-muted">2003</div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-sm-6 mb-4">
                     <div class="portfolio-item shadow-sm">
-                        <a class="portfolio-link" data-toggle="modal" href="#foodModal3">
+                        <a class="portfolio-link video-modal" data-video="https://www.youtube.com/embed/OF_92nCcSY8" data-toggle="modal" data-target="#videoModal">                            
                             <div class="portfolio-hover">
                                 <div class="portfolio-hover-content">
                                     <span style="color: rgba(255, 0, 0);">
@@ -405,8 +398,8 @@
                             <img class="img-fluid" src="assets/img/food/compilation.jpg" alt="" />
                         </a>
                         <div class="portfolio-caption">
-                            <div class="portfolio-caption-heading">Finish</div>
-                            <div class="portfolio-caption-subheading text-muted">Identity</div>
+                            <div class="portfolio-caption-heading">Compilation</div>
+                            <div class="portfolio-caption-subheading text-muted">2004</div>
                         </div>
                     </div>
                 </div>
@@ -416,7 +409,7 @@
     <!-- Clients-->
     <section class="page-section" id="clients" style="padding-bottom: 0;">
         <div class="text-center">
-            <h2 class="section-heading">.clients</h2>
+            <h2 class="display-3"><span style="color: blue;">.</span>clients</h2>
             <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
         </div>
         <div class="py-5">
@@ -524,14 +517,14 @@
             <div class="row">
                 <div class="col-lg-6 align-self-center">
                     <div class="text-left">
-                        <h2 class="section-heading">.about</h2>
-                        <h3 class="section-subheading">Lorem ipsum dolor sit, amet consectetur
-                            adipisicing elit. Corrupti rerum
-                            dolores, cum explicabo, voluptatibus aut asperiores magnam autem illum, hic quasi esse. Quia
-                            consequatur repellat
-                            eum aliquid tenetur. Veritatis eveniet consectetur nisi, tenetur quae aliquam odit optio
-                            ipsa mollitia nam facilis
-                            quo omnis rerum eaque, magni voluptatum eligendi, dicta eum?</h3>
+                        <h2 class="display-3"><span style="color: violet;">.</span>about</h2>
+                        <p class="lead">As an <b>award-winner director/cameraman</b>, J. Wesley Jones has excelled is
+                            the craft of commercial filmmaking for over thirty years.</p>
+                        <p>J. Wesley established himself as a director/cameraman with innovative in-camera special
+                            effects, saturated, mouth watering use of color, and the edgy photography that sets his
+                            style apart. He is an expert with liquids and high-speed photography, and he has produced so
+                            many pieces featuring beer, soda and other liquids that he earned the nickname, <b>"The King
+                                of Splash"</b> in Japan.</p>
                     </div>
                 </div>
                 <div class="col-lg-6 text-center">
@@ -766,6 +759,23 @@
             </div>
         </div>
     </div>
+    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <!-- <h4 class="modal-title" id="myModalLabel">Modal title</h4> -->
+                </div>
+                <div class="modal-body">
+                    <div class="embed-container">
+                        <iframe width="100%" height="350" src="" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Bootstrap core JS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
@@ -775,7 +785,7 @@
     <!-- <script src="assets/mail/jqBootstrapValidation.js"></script>
         <script src="assets/mail/contact_me.js"></script> -->
     <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
+    <script src="js/scripts.js"></script>    
 </body>
 
 </html>
