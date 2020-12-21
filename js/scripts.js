@@ -16,6 +16,9 @@
         $(theModal).on('hidden.bs.modal', function () {
             $(theModal + ' iframe').attr('src', videoSRC);
         });
+        $(theModal + ' iframe').on("load", function() {
+            alert("iframe is done loading");
+        });
     });
 
     // Smooth scrolling using jQuery easing

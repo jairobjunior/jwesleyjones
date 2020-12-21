@@ -36,8 +36,7 @@
   color: #999;
   font-size: 14px;
   text-align: center;
-  overflow: hidden;
-  min-height: 290px;
+  overflow: hidden;  
 }
 
 .carousel .item .img-box {
@@ -54,6 +53,10 @@
   height: 100%;
   display: block;
   border-radius: 50%;
+}
+
+.carousel-inner > .item > .row {
+  min-height: 300px;    /* Set slide height here */
 }
 
 .carousel .testimonial {
